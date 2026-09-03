@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha Solex LLP | Rooftop & Ground Mount Solar EPC — Raipur (C.G.)</title>
+  <meta name="description" content="Alpha Solex LLP — Clean Energy • Smart Engineering. Rooftop Solar, Ground Mount Solar and End-to-End EPC for residential, commercial, industrial and utility projects in Raipur, Chhattisgarh." />
+  <meta name="keywords" content="Alpha Solex, solar, rooftop solar, ground mount solar, EPC, Raipur, Chhattisgarh, PM Surya Ghar, CREDA, PM-KUSUM, net metering" />
+  <meta name="author" content="Alpha Solex LLP" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Alpha Solex LLP | Solar Power Engineered For Your Future" />
+  <meta property="og:description" content="Rooftop Solar • Ground Mount Solar • End-to-End EPC. Clean Energy • Smart Engineering." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo.png" />
+
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              green: '#2f9e44',
+              greenDark: '#1f7a33',
+              greenLight: '#69db7c',
+              blue: '#1c4e80',
+              blueDark: '#0f3357',
+              sun: '#ffb703',
+              sunDeep: '#fb8500',
+            },
+          },
+          fontFamily: {
+            display: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          keyframes: {
+            floaty: {
+              '0%,100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-14px)' },
+            },
+            spinSlow: {
+              '0%': { transform: 'rotate(0deg)' },
+              '100%': { transform: 'rotate(360deg)' },
+            },
+          },
+          animation: {
+            floaty: 'floaty 6s ease-in-out infinite',
+            spinSlow: 'spinSlow 60s linear infinite',
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="font-body bg-white text-slate-800 antialiased">
+
+  <!-- ============ HEADER / NAV ============ -->
+  <header id="site-header" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div id="nav-bar" class="mt-3 flex items-center justify-between rounded-2xl border border-white/40 bg-white/80 px-4 py-2.5 shadow-lg shadow-slate-900/5 backdrop-blur-md transition-all duration-300">
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3">
+          <img src="assets/logo.png" alt="Alpha Solex LLP logo" class="h-11 w-11 rounded-full ring-2 ring-brand-green/20" />
+          <span class="leading-tight">
+            <span class="block font-display text-lg font-800 font-bold tracking-tight text-brand-blueDark">ALPHA SOLEX</span>
+            <span class="block text-[11px] font-semibold uppercase tracking-[0.18em] text-brand-green">Clean Energy • Smart Engineering</span>
+          </span>
+        </a>
+
+        <!-- Desktop links -->
+        <div class="hidden items-center gap-1 lg:flex">
+          <a href="#solutions" class="nav-link">Solutions</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#schemes" class="nav-link">Govt. Schemes</a>
+          <a href="#why" class="nav-link">Why Us</a>
+          <a href="#team" class="nav-link">Team</a>
+          <a href="#contact" class="ml-2 rounded-xl bg-brand-green px-4 py-2 text-sm font-semibold text-white shadow-md shadow-brand-green/30 transition hover:bg-brand-greenDark hover:shadow-lg">Get a Quote</a>
+        </div>
+
+        <!-- Mobile toggle -->
+        <button id="menu-toggle" aria-label="Toggle menu" class="lg:hidden inline-flex h-10 w-10 items-center justify-center rounded-xl border border-slate-200 text-slate-700">
+          <svg id="icon-open" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+          <svg id="icon-close" class="hidden h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <!-- Mobile menu -->
+      <div id="mobile-menu" class="hidden lg:hidden mt-2 rounded-2xl border border-slate-100 bg-white p-3 shadow-xl">
+        <a href="#solutions" class="mobile-link">Solutions</a>
+        <a href="#process" class="mobile-link">Process</a>
+        <a href="#schemes" class="mobile-link">Govt. Schemes</a>
+        <a href="#why" class="mobile-link">Why Us</a>
+        <a href="#team" class="mobile-link">Team</a>
+        <a href="#contact" class="mt-2 block rounded-xl bg-brand-green px-4 py-3 text-center font-semibold text-white">Get a Quote</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="relative overflow-hidden bg-gradient-to-b from-brand-blueDark via-brand-blue to-brand-green pt-32 pb-20 lg:pt-40 lg:pb-28">
+    <!-- decorative sun -->
+    <div class="pointer-events-none absolute -right-24 -top-24 h-96 w-96 rounded-full bg-brand-sun/30 blur-3xl"></div>
+    <div class="pointer-events-none absolute -left-24 top-1/3 h-72 w-72 rounded-full bg-brand-greenLight/20 blur-3xl"></div>
+
+    <div class="relative mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+      <div class="text-center lg:text-left">
+        <!-- Big company logo -->
+        <div class="mb-8 flex flex-col items-center gap-4 lg:flex-row lg:items-center">
+          <img src="assets/logo.png" alt="Alpha Solex LLP logo" class="h-28 w-28 rounded-full bg-white/95 p-1.5 ring-4 ring-white/30 shadow-2xl sm:h-32 sm:w-32" />
+          <div class="text-center lg:text-left">
+            <p class="font-display text-3xl font-extrabold tracking-tight text-white sm:text-4xl">ALPHA SOLEX <span class="text-brand-sun">LLP</span></p>
+            <p class="mt-1 text-sm font-semibold uppercase tracking-[0.22em] text-brand-greenLight">Clean Energy • Smart Engineering</p>
+          </div>
+        </div>
+        <span class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-sm font-semibold text-brand-sun ring-1 ring-inset ring-white/20">
+          <span class="h-2 w-2 rounded-full bg-brand-sun animate-pulse"></span>
+          Rooftop • Ground Mount • End-to-End EPC
+        </span>
+        <h1 class="mt-6 font-display text-4xl font-extrabold leading-[1.05] text-white sm:text-5xl lg:text-6xl">
+          Solar Power
+          <span class="block bg-gradient-to-r from-brand-sun to-brand-sunDeep bg-clip-text text-transparent">Engineered For Your Future.</span>
+        </h1>
+        <p class="mt-6 max-w-xl text-lg text-slate-100/90 lg:mx-0 mx-auto">
+          Alpha Solex LLP delivers clean energy and smart engineering — quality components, professional installation and long-term support for homes, businesses and utility-scale projects.
+        </p>
+        <div class="mt-8 flex flex-col items-center gap-3 sm:flex-row lg:justify-start justify-center">
+          <a href="#contact" class="rounded-xl bg-brand-sun px-6 py-3.5 font-semibold text-brand-blueDark shadow-lg shadow-brand-sun/30 transition hover:-translate-y-0.5 hover:bg-brand-sunDeep hover:text-white">Design My Solar Project</a>
+          <a href="#solutions" class="rounded-xl border border-white/30 bg-white/5 px-6 py-3.5 font-semibold text-white backdrop-blur transition hover:bg-white/10">Explore Solutions</a>
+        </div>
+
+        <!-- segments -->
+        <div class="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
+          <div class="rounded-xl bg-white/10 p-3 text-center ring-1 ring-white/15 backdrop-blur">
+            <p class="font-display text-sm font-bold text-white">Residential</p>
+            <p class="text-xs text-slate-200/80">Rooftop systems</p>
+          </div>
+          <div class="rounded-xl bg-white/10 p-3 text-center ring-1 ring-white/15 backdrop-blur">
+            <p class="font-display text-sm font-bold text-white">Commercial</p>
+            <p class="text-xs text-slate-200/80">Bill reduction</p>
+          </div>
+          <div class="rounded-xl bg-white/10 p-3 text-center ring-1 ring-white/15 backdrop-blur">
+            <p class="font-display text-sm font-bold text-white">Industrial</p>
+            <p class="text-xs text-slate-200/80">Captive power</p>
+          </div>
+          <div class="rounded-xl bg-white/10 p-3 text-center ring-1 ring-white/15 backdrop-blur">
+            <p class="font-display text-sm font-bold text-white">Ground Mount</p>
+            <p class="text-xs text-slate-200/80">Utility / land</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- hero image -->
+      <div class="relative mx-auto w-full max-w-xl lg:max-w-none">
+        <div class="absolute -inset-4 -z-10 animate-spinSlow rounded-[2rem] bg-gradient-to-tr from-brand-sun/20 via-transparent to-brand-greenLight/20 blur-2xl"></div>
+        <div class="overflow-hidden rounded-3xl border border-white/20 shadow-2xl ring-1 ring-white/10">
+          <img src="assets/rooftop.png" alt="Rooftop solar installation by Alpha Solex" class="h-full w-full object-cover" />
+        </div>
+        <!-- floating badge -->
+        <div class="absolute -bottom-5 -left-3 flex items-center gap-3 rounded-2xl bg-white/95 px-4 py-3 shadow-xl ring-1 ring-black/5 backdrop-blur sm:-left-6">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-green/10 text-xl">☀️</span>
+          <div>
+            <p class="font-display text-sm font-bold text-brand-blueDark">Rooftop & Ground Mount</p>
+            <p class="text-xs text-slate-500">End-to-End Solar EPC</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- wave divider -->
+    <div class="pointer-events-none absolute bottom-0 inset-x-0 leading-none">
+      <svg viewBox="0 0 1440 120" class="w-full" preserveAspectRatio="none"><path fill="#ffffff" d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,64C1200,53,1320,43,1380,37.3L1440,32L1440,120L0,120Z"></path></svg>
+    </div>
+  </section>
+
+  <!-- ============ STATS STRIP ============ -->
+  <section class="bg-white">
+    <div class="relative z-10 mx-auto -mt-6 max-w-6xl px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 gap-4 rounded-2xl border border-slate-100 bg-white px-6 py-7 shadow-xl shadow-slate-900/5 md:grid-cols-4">
+        <div class="text-center">
+          <p class="font-display text-3xl font-extrabold text-brand-green">4</p>
+          <p class="mt-1 text-sm text-slate-500">Project Segments</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-3xl font-extrabold text-brand-green">6</p>
+          <p class="mt-1 text-sm text-slate-500">Step EPC Process</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-3xl font-extrabold text-brand-green">100%</p>
+          <p class="mt-1 text-sm text-slate-500">Project-Specific Design</p>
+        </div>
+        <div class="text-center">
+          <p class="font-display text-3xl font-extrabold text-brand-green">EPC</p>
+          <p class="mt-1 text-sm text-slate-500">End-to-End Delivery</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOLUTIONS ============ -->
+  <section id="solutions" class="py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="section-eyebrow">Our Solar Solutions</p>
+        <h2 class="section-title">Smart design. Quality components. Long-term support.</h2>
+        <p class="mt-4 text-slate-500">Professional installation for every scale — from a single rooftop to land-based utility plants.</p>
+      </div>
+
+      <div class="mt-14 grid gap-8 lg:grid-cols-2">
+        <!-- Rooftop -->
+        <article class="group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-2xl">
+          <div class="relative h-60 overflow-hidden bg-gradient-to-br from-sky-100 to-emerald-50">
+            <img src="assets/rooftop.png" alt="Rooftop solar installation" class="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+          </div>
+          <div class="p-7">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand-green/10 text-brand-green">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+              </span>
+              <h3 class="font-display text-xl font-bold text-brand-blueDark">Rooftop Solar</h3>
+            </div>
+            <p class="mt-4 text-slate-600">Grid-connected systems for homes, offices, shops, institutions and industries.</p>
+          </div>
+        </article>
+
+        <!-- Ground mount -->
+        <article class="group overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-lg shadow-slate-900/5 transition hover:-translate-y-1 hover:shadow-2xl">
+          <div class="relative h-60 overflow-hidden bg-gradient-to-br from-emerald-100 to-sky-50">
+            <img src="assets/groundmount.png" alt="Ground mount solar plant" class="h-full w-full object-contain p-4 transition duration-500 group-hover:scale-105" />
+          </div>
+          <div class="p-7">
+            <div class="flex items-center gap-3">
+              <span class="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-brand-blue/10 text-brand-blue">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 21h16M6 21V9l6-4 6 4v12M9 21v-4h6v4"/></svg>
+              </span>
+              <h3 class="font-display text-xl font-bold text-brand-blueDark">Ground Mount Solar</h3>
+            </div>
+            <p class="mt-4 text-slate-600">Land-based solar plants for larger energy requirements, captive use and eligible project models.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS / WHAT WE DELIVER ============ -->
+  <section id="process" class="relative overflow-hidden bg-slate-50 py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-12 lg:grid-cols-2">
+        <div>
+          <p class="section-eyebrow">What We Deliver</p>
+          <h2 class="section-title">A complete, engineered EPC journey.</h2>
+          <p class="mt-4 text-slate-500">Smart design • Quality components • Professional installation • Long-term support — at every step.</p>
+          <img src="assets/install.png" alt="Professional solar installation" class="mt-8 w-full rounded-2xl shadow-xl" />
+        </div>
+
+        <ol class="relative space-y-5">
+          <li class="process-step">
+            <span class="step-num">01</span>
+            <div>
+              <h3 class="step-title">Site Survey &amp; Load Study</h3>
+              <p class="step-desc">Roof/land assessment, shadow analysis and consumption review.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="step-num">02</span>
+            <div>
+              <h3 class="step-title">Engineering &amp; Design</h3>
+              <p class="step-desc">System sizing, SLD, layout, structure and protection design.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="step-num">03</span>
+            <div>
+              <h3 class="step-title">Supply &amp; Installation</h3>
+              <p class="step-desc">Quality modules, inverters, mounting structures, cabling and BOS.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="step-num">04</span>
+            <div>
+              <h3 class="step-title">Grid &amp; Net Metering Support</h3>
+              <p class="step-desc">Documentation and coordination with the concerned DISCOM, as applicable.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="step-num">05</span>
+            <div>
+              <h3 class="step-title">Testing &amp; Commissioning</h3>
+              <p class="step-desc">Electrical checks, synchronization and handover documentation.</p>
+            </div>
+          </li>
+          <li class="process-step">
+            <span class="step-num">06</span>
+            <div>
+              <h3 class="step-title">O&amp;M &amp; Performance Support</h3>
+              <p class="step-desc">Preventive maintenance, monitoring and troubleshooting support.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GOVERNMENT SCHEMES ============ -->
+  <section id="schemes" class="py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="section-eyebrow">Government Support &amp; Customer Value</p>
+        <h2 class="section-title">Schemes that improve your solar economics.</h2>
+        <p class="mt-4 text-slate-500">Indicative scheme information — eligibility, sanction, benchmark cost and portal/DISCOM rules apply.</p>
+      </div>
+
+      <!-- Desktop table -->
+      <div class="mt-12 hidden overflow-hidden rounded-2xl border border-slate-200 shadow-sm lg:block">
+        <table class="min-w-full divide-y divide-slate-200 text-left text-sm">
+          <thead class="bg-brand-blueDark text-white">
+            <tr>
+              <th class="px-6 py-4 font-semibold">Scheme / Support</th>
+              <th class="px-6 py-4 font-semibold">Who Can Benefit</th>
+              <th class="px-6 py-4 font-semibold">Indicative Support</th>
+              <th class="px-6 py-4 font-semibold">Important Note</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 bg-white">
+            <tr class="align-top transition hover:bg-emerald-50/40">
+              <td class="px-6 py-5 font-semibold text-brand-blueDark">PM Surya Ghar: Muft Bijli Yojana</td>
+              <td class="px-6 py-5 text-slate-600">Eligible residential rooftop consumers</td>
+              <td class="px-6 py-5 text-slate-600">₹30,000/kW for first 2 kW; ₹18,000/kW for the 3rd kW; maximum ₹78,000 for systems above 3 kW.</td>
+              <td class="px-6 py-5 text-slate-500">Residential grid-connected rooftop systems; subsidy is subject to current portal rules and DISCOM verification. Commercial/industrial consumers do not receive this residential CFA.</td>
+            </tr>
+            <tr class="align-top transition hover:bg-emerald-50/40">
+              <td class="px-6 py-5 font-semibold text-brand-blueDark">GHS / RWA common facilities</td>
+              <td class="px-6 py-5 text-slate-600">Eligible group housing societies / RWAs</td>
+              <td class="px-6 py-5 text-slate-600">Up to ₹18,000/kW for eligible common facilities, including EV charging, within scheme limits.</td>
+              <td class="px-6 py-5 text-slate-500">Eligibility and capacity limits apply; confirm through the applicable national/state portal.</td>
+            </tr>
+            <tr class="align-top transition hover:bg-emerald-50/40">
+              <td class="px-6 py-5 font-semibold text-brand-blueDark">CREDA – Chhattisgarh state support</td>
+              <td class="px-6 py-5 text-slate-600">Eligible categories under CREDA programmes</td>
+              <td class="px-6 py-5 text-slate-600">CREDA publishes category-wise state grants. Examples include off-grid solar and solar irrigation support.</td>
+              <td class="px-6 py-5 text-slate-500">Rates and eligibility can change by programme/category. Final benefit should be checked with CREDA/CSPDCL before financial commitment.</td>
+            </tr>
+            <tr class="align-top transition hover:bg-emerald-50/40">
+              <td class="px-6 py-5 font-semibold text-brand-blueDark">CREDA Solar Irrigation Pump</td>
+              <td class="px-6 py-5 text-slate-600">Eligible farmers / community / government organisations</td>
+              <td class="px-6 py-5 text-slate-600">Published CREDA schedule: up to ₹50/W or ₹2 lakh per plant for eligible pumps up to 5 HP.</td>
+              <td class="px-6 py-5 text-slate-500">Applicable criteria, approved models and programme availability must be verified with CREDA.</td>
+            </tr>
+            <tr class="align-top transition hover:bg-emerald-50/40">
+              <td class="px-6 py-5 font-semibold text-brand-blueDark">PM-KUSUM</td>
+              <td class="px-6 py-5 text-slate-600">Eligible agricultural beneficiaries / project entities</td>
+              <td class="px-6 py-5 text-slate-600">For eligible pump components, central support can be 30% (or 50% in specified special-category regions) of benchmark/tender cost, with state contribution rules.</td>
+              <td class="px-6 py-5 text-slate-500">Ground-mounted Component-A historically covered 500 kW–2 MW projects. Current availability/extension must be confirmed with the state implementing agency.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Mobile cards -->
+      <div class="mt-10 grid gap-5 lg:hidden">
+        <div class="scheme-card">
+          <h3 class="scheme-name">PM Surya Ghar: Muft Bijli Yojana</h3>
+          <p class="scheme-row"><span>Who:</span> Eligible residential rooftop consumers</p>
+          <p class="scheme-row"><span>Support:</span> ₹30,000/kW for first 2 kW; ₹18,000/kW for the 3rd kW; maximum ₹78,000 for systems above 3 kW.</p>
+          <p class="scheme-note">Residential grid-connected rooftop systems; subsidy is subject to current portal rules and DISCOM verification. Commercial/industrial consumers do not receive this residential CFA.</p>
+        </div>
+        <div class="scheme-card">
+          <h3 class="scheme-name">GHS / RWA common facilities</h3>
+          <p class="scheme-row"><span>Who:</span> Eligible group housing societies / RWAs</p>
+          <p class="scheme-row"><span>Support:</span> Up to ₹18,000/kW for eligible common facilities, including EV charging, within scheme limits.</p>
+          <p class="scheme-note">Eligibility and capacity limits apply; confirm through the applicable national/state portal.</p>
+        </div>
+        <div class="scheme-card">
+          <h3 class="scheme-name">CREDA – Chhattisgarh state support</h3>
+          <p class="scheme-row"><span>Who:</span> Eligible categories under CREDA programmes</p>
+          <p class="scheme-row"><span>Support:</span> CREDA publishes category-wise state grants. Examples include off-grid solar and solar irrigation support.</p>
+          <p class="scheme-note">Rates and eligibility can change by programme/category. Final benefit should be checked with CREDA/CSPDCL before financial commitment.</p>
+        </div>
+        <div class="scheme-card">
+          <h3 class="scheme-name">CREDA Solar Irrigation Pump</h3>
+          <p class="scheme-row"><span>Who:</span> Eligible farmers / community / government organisations</p>
+          <p class="scheme-row"><span>Support:</span> Published CREDA schedule: up to ₹50/W or ₹2 lakh per plant for eligible pumps up to 5 HP.</p>
+          <p class="scheme-note">Applicable criteria, approved models and programme availability must be verified with CREDA.</p>
+        </div>
+        <div class="scheme-card">
+          <h3 class="scheme-name">PM-KUSUM</h3>
+          <p class="scheme-row"><span>Who:</span> Eligible agricultural beneficiaries / project entities</p>
+          <p class="scheme-row"><span>Support:</span> For eligible pump components, central support can be 30% (or 50% in specified special-category regions) of benchmark/tender cost, with state contribution rules.</p>
+          <p class="scheme-note">Ground-mounted Component-A historically covered 500 kW–2 MW projects. Current availability/extension must be confirmed with the state implementing agency.</p>
+        </div>
+      </div>
+
+      <p class="mt-6 text-center text-xs text-slate-400">Indicative information only. All figures, eligibility and sanctions are subject to the applicable national/state portal, CREDA/CSPDCL and DISCOM rules at the time of application.</p>
+    </div>
+  </section>
+
+  <!-- ============ WHY ALPHA SOLEX ============ -->
+  <section id="why" class="relative overflow-hidden bg-brand-blueDark py-20 text-white lg:py-28">
+    <div class="pointer-events-none absolute -left-20 top-0 h-72 w-72 rounded-full bg-brand-green/20 blur-3xl"></div>
+    <div class="pointer-events-none absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-brand-sun/20 blur-3xl"></div>
+    <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="text-sm font-bold uppercase tracking-[0.2em] text-brand-sun">Why Alpha Solex</p>
+        <h2 class="mt-3 font-display text-3xl font-extrabold sm:text-4xl">Built around your project — not a package.</h2>
+      </div>
+
+      <div class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="why-card">
+          <div class="why-icon">🎯</div>
+          <p>Project-specific engineering instead of one-size-fits-all packages</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📊</div>
+          <p>Transparent proposals with generation and savings assumptions</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🛡️</div>
+          <p>Professional installation practices and electrical safety focus</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">📁</div>
+          <p>Support for documentation, approvals and commissioning, where applicable</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🏭</div>
+          <p>Residential, commercial, industrial and ground-mount project capability</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">☀️</div>
+          <p>Clean energy, smart engineering — engineered for your future.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section id="team" class="py-20 lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <p class="section-eyebrow">Your Solar Partners</p>
+        <h2 class="section-title">Meet the people behind Alpha Solex.</h2>
+      </div>
+
+      <div class="mt-14 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <article class="team-card">
+          <div class="team-avatar">DD</div>
+          <h3 class="mt-5 font-display text-xl font-bold text-brand-blueDark">Devashish David</h3>
+          <p class="text-brand-green font-semibold">Managing Director</p>
+          <a href="tel:+917000793317" class="team-contact">📞 +91-70007&nbsp;93317</a>
+          <a href="mailto:devashish.david@alphasolex.com" class="team-contact">✉️ devashish.david@alphasolex.com</a>
+        </article>
+        <article class="team-card">
+          <div class="team-avatar">AS</div>
+          <h3 class="mt-5 font-display text-xl font-bold text-brand-blueDark">Ayushi Singh Deo</h3>
+          <p class="text-brand-green font-semibold">Director</p>
+          <a href="tel:+917000816926" class="team-contact">📞 +91-70008&nbsp;16926</a>
+          <a href="mailto:ayushi.singhdeo@alphasolex.com" class="team-contact">✉️ ayushi.singhdeo@alphasolex.com</a>
+        </article>
+        <article class="team-card">
+          <img src="assets/sefali.jpg" alt="Sefali Singh" class="team-photo" />
+          <h3 class="mt-5 font-display text-xl font-bold text-brand-blueDark">Sefali Singh</h3>
+          <p class="text-brand-green font-semibold">Director</p>
+          <a href="tel:+919407313303" class="team-contact">📞 +91-94073&nbsp;13303</a>
+          <a href="mailto:sefali.singh@alphasolex.com" class="team-contact">✉️ sefali.singh@alphasolex.com</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / CONTACT ============ -->
+  <section id="contact" class="relative overflow-hidden bg-gradient-to-br from-brand-green to-brand-greenDark py-20 text-white lg:py-28">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-12 lg:grid-cols-2">
+        <div>
+          <h2 class="font-display text-3xl font-extrabold sm:text-4xl">Let's design your solar project.</h2>
+          <p class="mt-4 max-w-lg text-lg text-emerald-50">
+            Share your latest electricity bill / connected load and site details for a preliminary assessment.
+          </p>
+
+          <div class="mt-8 space-y-4">
+            <a href="tel:+919009357575" class="contact-line">
+              <span class="contact-ico">📞</span>
+              <span>+91-9009357575, 7000793317</span>
+            </a>
+            <a href="mailto:info@alphasolex.com" class="contact-line">
+              <span class="contact-ico">✉️</span>
+              <span>info@alphasolex.com</span>
+            </a>
+            <a href="https://www.alphasolex.com" target="_blank" rel="noopener" class="contact-line">
+              <span class="contact-ico">🌐</span>
+              <span>www.alphasolex.com</span>
+            </a>
+            <div class="contact-line">
+              <span class="contact-ico">📍</span>
+              <span>Z#5, Near Anmol Super Market, Sai Vihar, Mahaveer Nagar, New Purena, Raipur (C.G.) – 492006</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enquiry form -->
+        <div class="rounded-3xl bg-white p-7 text-slate-800 shadow-2xl">
+          <h3 class="font-display text-xl font-bold text-brand-blueDark">Request a Preliminary Assessment</h3>
+          <p class="mt-1 text-sm text-slate-500">We'll get back to you with an indicative proposal.</p>
+          <form id="enquiry-form" class="mt-6 space-y-4" novalidate>
+            <div>
+              <label for="name" class="form-label">Full Name</label>
+              <input id="name" name="name" type="text" required class="form-input" placeholder="Your name" />
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label for="phone" class="form-label">Phone</label>
+                <input id="phone" name="phone" type="tel" required class="form-input" placeholder="+91-" />
+              </div>
+              <div>
+                <label for="email" class="form-label">Email</label>
+                <input id="email" name="email" type="email" class="form-input" placeholder="you@example.com" />
+              </div>
+            </div>
+            <div>
+              <label for="segment" class="form-label">Project Type</label>
+              <select id="segment" name="segment" class="form-input">
+                <option>Residential — Rooftop</option>
+                <option>Commercial — Bill reduction</option>
+                <option>Industrial — Captive power</option>
+                <option>Ground Mount — Utility / land</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="form-label">Site details / connected load</label>
+              <textarea id="message" name="message" rows="3" class="form-input" placeholder="Approx. monthly bill, connected load, roof/land area..."></textarea>
+            </div>
+            <button type="submit" class="w-full rounded-xl bg-brand-green px-6 py-3.5 font-semibold text-white shadow-lg transition hover:bg-brand-greenDark">Send Enquiry</button>
+            <p id="form-status" class="hidden rounded-lg bg-emerald-50 px-4 py-3 text-sm font-medium text-brand-greenDark"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-brand-blueDark py-14 text-slate-300">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid gap-10 md:grid-cols-3">
+        <div>
+          <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="Alpha Solex LLP logo" class="h-12 w-12 rounded-full ring-2 ring-white/10" />
+            <div>
+              <p class="font-display text-lg font-bold text-white">ALPHA SOLEX LLP</p>
+              <p class="text-xs uppercase tracking-[0.18em] text-brand-sun">Clean Energy • Smart Engineering</p>
+            </div>
+          </div>
+          <p class="mt-4 text-sm text-slate-400">Rooftop &amp; Ground Mount Solar • End-to-End EPC. Empowering homes with green energy.</p>
+          <p class="mt-3 text-xs text-slate-500">GST: 22ACOFA0287H1ZH</p>
+        </div>
+
+        <div>
+          <p class="footer-head">Explore</p>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="#solutions" class="footer-link">Solar Solutions</a></li>
+            <li><a href="#process" class="footer-link">What We Deliver</a></li>
+            <li><a href="#schemes" class="footer-link">Government Schemes</a></li>
+            <li><a href="#why" class="footer-link">Why Alpha Solex</a></li>
+            <li><a href="#team" class="footer-link">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="footer-head">Contact</p>
+          <ul class="mt-4 space-y-2 text-sm">
+            <li><a href="tel:+919009357575" class="footer-link">📞 +91-9009357575, 7000793317</a></li>
+            <li><a href="mailto:info@alphasolex.com" class="footer-link">✉️ info@alphasolex.com</a></li>
+            <li><a href="https://www.alphasolex.com" target="_blank" rel="noopener" class="footer-link">🌐 www.alphasolex.com</a></li>
+            <li class="text-slate-400">📍 Z#5, Near Anmol Super Market, Sai Vihar, Mahaveer Nagar, New Purena, Raipur (C.G.) – 492006</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-xs text-slate-500 sm:flex-row">
+        <p>© <span id="year"></span> Alpha Solex LLP. All rights reserved.</p>
+        <p>Rooftop &amp; Ground Mount Solar EPC • Raipur, Chhattisgarh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button id="to-top" aria-label="Back to top" class="fixed bottom-6 right-6 z-50 h-12 w-12 rounded-full bg-brand-green text-white shadow-lg shadow-brand-green/40 transition hover:bg-brand-greenDark">
+    <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
